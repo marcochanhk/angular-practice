@@ -8,11 +8,11 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 })
 export class FormSampleComponent implements OnInit {
 
-  form: any;
+  form!: FormGroup;
 
   constructor(
     private fb: FormBuilder,
-  ) {
+  ) { 
     this.createForm();
   }
 
@@ -31,10 +31,10 @@ export class FormSampleComponent implements OnInit {
   }
 
   modifyForm(){
-    this.form.get('key').enable();
-    this.form.get('person.name').disable();
-    this.form.get('key').setValue("value");
-    this.form.get('person.age').statusChanges.subscribe((val: any) => {
+    this.form.get('checked')?.enable();
+    this.form.get('person.name')?.disable();
+    this.form.get('key')?.setValue("value");
+    this.form.get('person.age')?.statusChanges.subscribe((val: any) => {
       switch(val){
         case "VALID":
           //do something
@@ -43,7 +43,7 @@ export class FormSampleComponent implements OnInit {
           break;
       }
     })
-    this.form.get('key').clearValidators(); // required updateValueAndValidity()
+    this.form.get('key')?.clearValidators(); // required updateValueAndValidity()
 
     this.form.value.key;
     this.form.controls.key.value;
