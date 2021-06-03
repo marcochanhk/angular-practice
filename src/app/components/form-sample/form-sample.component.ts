@@ -34,6 +34,7 @@ export class FormSampleComponent implements OnInit {
     this.form.get('checked')?.enable();
     this.form.get('person.name')?.disable();
     this.form.get('key')?.setValue("value");
+    this.form.get('key')?.clearValidators(); // required updateValueAndValidity()
     this.form.get('person.age')?.statusChanges.subscribe((val: any) => {
       switch(val){
         case "VALID":
@@ -42,22 +43,19 @@ export class FormSampleComponent implements OnInit {
         default:
           break;
       }
-    })
-    this.form.get('key')?.clearValidators(); // required updateValueAndValidity()
+    });
 
     this.form.value.key;
     this.form.controls.key.value;
+    this.form.controls.key.valid;
+    this.form.controls.key.valueChanges.subscribe(() => console.log("done"))
     this.form.controls['key'].setValue("data");
     this.form.patchValue({
       origin: 'origin',
       checked: true
     });
-
-
   }
 
-  onSubmit(){
-
-  }
+  onSubmit(){ }
 
 }
