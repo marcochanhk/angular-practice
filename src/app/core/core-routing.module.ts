@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FormPageComponent } from './pages/form-page/form-page.component';
+import { CorePageComponent } from './pages/core-page/core-page.component';
 
 const routes: Routes = [
     {
-        path: 'form-page', component: FormPageComponent
+        path: 'page', component: CorePageComponent
     }
 ];
 

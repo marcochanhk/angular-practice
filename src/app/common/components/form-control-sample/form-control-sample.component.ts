@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-form-sample',
-  templateUrl: './form-sample.component.html',
-  styleUrls: ['./form-sample.component.scss']
+  selector: 'app-form-control-sample',
+  templateUrl: './form-control-sample.component.html',
+  styleUrls: ['./form-control-sample.component.scss']
 })
-export class FormSampleComponent implements OnInit {
+export class FormControlSampleComponent implements OnInit {
 
   form!: FormGroup;
 

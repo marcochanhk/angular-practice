@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
-import { CommonFormSampleComponent } from './components/common-form-sample/common-form-sample.component';
+import { FormControlSampleComponent } from './components/form-control-sample/form-control-sample.component';
+import { MaterialModule } from './modules/material.module';
+import { SampleCommonModule } from './modules/sample-common.module';
 
 @NgModule({
   declarations: [
-    CommonFormSampleComponent
+    FormControlSampleComponent
   ],
   imports: [
+    MaterialModule,
+    SampleCommonModule
   ],
   providers: [],
   bootstrap: []

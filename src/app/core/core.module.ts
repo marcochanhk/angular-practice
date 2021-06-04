@@ -1,17 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MaterialModule } from '../common/modules/common-material.module';
+import { MaterialModule } from '../common/modules/material.module';
+import { SampleCommonModule } from '../common/modules/sample-common.module';
 import { CoreRoutingModule } from './core-routing.module';
-import { FormPageComponent } from './pages/form-page/form-page.component';
+import { CorePageComponent } from './pages/core-page/core-page.component';
 
 @NgModule({
   declarations: [
-    FormPageComponent
+    CorePageComponent,
   ],
   imports: [
-    CommonModule,
-    CoreRoutingModule,
-    MaterialModule
+    MaterialModule,
+    SampleCommonModule,
+    CoreRoutingModule
   ],
   providers: [],
   bootstrap: []
