@@ -1,6 +1,4 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MaterialModule } from '../common/modules/material.module';
 import { SampleCommonModule } from '../common/modules/sample-common.module';
 import { CoreRoutingModule } from './core-routing.module';
 import { CorePageComponent } from './pages/core-page/core-page.component';
@@ -10,7 +8,6 @@ import { CorePageComponent } from './pages/core-page/core-page.component';
     CorePageComponent,
   ],
   imports: [
-    MaterialModule,
     SampleCommonModule,
     CoreRoutingModule
   ],

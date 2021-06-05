@@ -7,17 +7,20 @@ import { MatListModule } from '@angular/material/list';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   exports: [
     MatToolbarModule,
     MatSidenavModule,
+    MatDividerModule,
     MatButtonModule,
     MatIconModule,
     MatListModule,
     MatInputModule,
     MatFormFieldModule,
     MatCardModule,
+    MatIconModule,
   ],
 })
 export class MaterialModule {}

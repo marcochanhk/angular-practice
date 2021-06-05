@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-practice-home-page';
+
+  menu = [
+    {
+      label: 'Accounts', link: '/accounts'
+    }, {
+      label: 'Create Account', link: '/create-account'
+    }, {
+      label: 'Contacts', link: '/contacts'
+    }, {
+      label: 'Create Contact', link: '/create-contact'
+    }
+  ];
+
 }
