@@ -9,13 +9,7 @@ export class AppComponent {
 
   menu = [
     {
-      label: 'Accounts', link: '/accounts'
-    }, {
-      label: 'Create Account', link: '/create-account'
-    }, {
-      label: 'Contacts', link: '/contacts'
-    }, {
-      label: 'Create Contact', link: '/create-contact'
+      label: 'Users', link: '/users'
     }
   ];
 
