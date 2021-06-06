@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from './common/modules/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserAnimationsModule,
     CommonModule,
     FlexLayoutModule,
+    HttpClientModule,
     MaterialModule,
   ],
   providers: [],
