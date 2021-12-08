@@ -40,7 +40,7 @@ export class FormSampleAComponent implements OnInit {
         confirmPassword: ['', Validators.required],
       },
       {
-        // form group level validation
+        // form group level validation, custom validator to be done
         // validators: [Validation.match('password', 'confirmPassword')]
       }
     )
