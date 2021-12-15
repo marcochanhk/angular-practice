@@ -23,7 +23,9 @@ export class TestService {
   getUser(): Observable<HttpResponse<User>> {
     return this.http.get<User>('user', { observe: 'response' })
     .pipe(
-      catchError(this.handleError)
+      catchError((err, caught) => {
+        return this.handleError(err);
+      })
     );
   }
 
